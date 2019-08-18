@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Local Storage</title>
+    <script>
+        
+        let name = "Shoukat Ali";
+        localStorage.setItem("name",name);
+
+        function displayLocal()
+        {
+            console.log(localStorage.getItem("name"));
+        }
+
+        sessionStorage.setItem("name",name);
+        function displaySession()
+        {
+            console.log(sessionStorage.getItem("name"));
+        }
+    </script>
+</head>
+<body>
+    <button onclick="displayLocal();">Get Local</button>
+    <button onclick="displaySession();">Get Session</button>
+    
+</body>
+</html>
