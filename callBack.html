@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Call Back</title>
+    <script>
+    let a =60 , b = 40 , c = 20;
+    function sum(a,b,c)
+    {
+        return a+b+c;
+    }
+
+    function person(result,average)
+    {
+        let newResult = average(result);
+        let percent = newResult*100;
+
+        console.log(percent);
+    }
+
+
+    var result =  sum(a,b,c);
+
+    person(result,function(result){
+
+        return result/(150);
+    })
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
